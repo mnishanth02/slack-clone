@@ -19,6 +19,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
+      "@features/*": ["./features/*"],
       "@ui/*": ["./components/ui/*"],
       "@common/*": ["./components/common/*"]
     }
