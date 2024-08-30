@@ -21,7 +21,8 @@
       "@/*": ["./*"],
       "@features/*": ["./features/*"],
       "@ui/*": ["./components/ui/*"],
-      "@common/*": ["./components/common/*"]
+      "@common/*": ["./components/common/*"],
+      "@convex/*": ["./convex/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
