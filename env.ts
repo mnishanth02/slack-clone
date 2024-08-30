@@ -6,7 +6,6 @@ config();
 export const env = createEnv({
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
-    DATABASE_URL: z.string().url(),
     CONVEX_DEPLOYMENT: z.string().min(1),
   },
   client: {

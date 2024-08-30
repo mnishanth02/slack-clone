@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
+import { ConvexAuthNextjsServerProvider } from "@convex-dev/auth/nextjs/server";
 
 import "./globals.css";
 
@@ -26,10 +27,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={cn("flex flex-col bg-background font-sans antialiased", fontSans.variable)}>
-        <Providers>{children}</Providers>
-      </body>
-    </html>
+    <ConvexAuthNextjsServerProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body className={cn("flex flex-col bg-background font-sans antialiased", fontSans.variable)}>
+          <Providers>{children}</Providers>
+        </body>
+      </html>
+    </ConvexAuthNextjsServerProvider>
   );
 }
