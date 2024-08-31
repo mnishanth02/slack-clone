@@ -1,6 +1,6 @@
 export default function Loader() {
   return (
-    <div className="grid animate-pulse place-items-center p-4 text-muted-foreground">
+    <div className="grid h-full animate-pulse place-items-center p-4 text-muted-foreground">
       <div role="status">
         <svg
           aria-hidden="true"

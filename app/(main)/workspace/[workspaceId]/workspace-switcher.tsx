@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
-import { Loader, PlusIcon } from "lucide-react";
+import { Loader, Loader2, PlusIcon } from "lucide-react";
 
 import { useWorkspaceId } from "@/hooks/useWorkspaceId";
 import { Button } from "@/components/ui/button";
@@ -31,6 +31,7 @@ const WorkspaceSwitcher = () => {
           {workspaceLoading ? (
             <Loader className="size-5 shrink-0 animate-spin" />
           ) : (
+            // <Loader />
             workspace?.name.charAt(0).toUpperCase()
           )}
         </Button>

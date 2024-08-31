@@ -7,7 +7,7 @@ import { Modals } from "@/components/common/modals";
 
 export function ComponentProvider({ children }: { children: ReactNode }) {
   return (
-    <TooltipProvider delayDuration={0}>
+    <TooltipProvider delayDuration={30}>
       <NextTopLoader color="#7c3aed" shadow="0 0 10px #7c3aed,0 0 5px #7c3aed" />
       <Modals />
       {children}
