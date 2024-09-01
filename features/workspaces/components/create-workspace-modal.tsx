@@ -22,7 +22,6 @@ export const CreateWorkspaceModal = () => {
 
     const form = e.currentTarget;
     const nameInput = form.elements.namedItem("name") as HTMLInputElement;
-    console.log(nameInput.value);
     mutate(
       { name: nameInput.value },
       {
